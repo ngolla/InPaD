@@ -3,13 +3,13 @@ InPaD is an Interactive Pattern Detection Tool
 Code: 
 This code is about Basic design patterns
 - Creational
- * Abstract Factory
- * Prototype
+ ** Abstract Factory
+ ** Prototype
 - Structural
- * Adapter
+ ** Adapter
 - Behavioural
- * Observer
- * Strategy
+ ** Observer
+ ** Strategy
 After working on Java code, converted into maven project.
 Made changes in pom.xml to generate jar file. 
 Extract source file dependencies:
