@@ -8,6 +8,7 @@ import edu.psu.behavioural.strategy.Composition;
 import edu.psu.behavioural.strategy.SimpleCompositor;
 import edu.psu.behavioural.strategy.TeXCompositor;
 import edu.psu.creational.FactoryGenerator;
+import edu.psu.creational.builder.BuilderClient;
 import edu.psu.creational.enums.FactoryType;
 import edu.psu.creational.factory.AbstractWidgetFactory;
 import edu.psu.creational.factory.enums.ProductType;
@@ -86,6 +87,12 @@ public class Client {
 
     private static void creationalDesignPattern() {
         //Creational - Abstract Factory
+        abstractFactoryPrototype();
+        // Creational - Builder
+        BuilderClient.client();
+    }
+
+    private static void abstractFactoryPrototype() {
         AbstractProduct product = null;
         AbstractWidgetFactory widgetFactory = null;
         try {
