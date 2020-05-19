@@ -7,16 +7,21 @@ import edu.psu.behavioural.strategy.ArrayCompositor;
 import edu.psu.behavioural.strategy.Composition;
 import edu.psu.behavioural.strategy.SimpleCompositor;
 import edu.psu.behavioural.strategy.TeXCompositor;
-import edu.psu.creational.FactoryGenerator;
+import edu.psu.creational.abstractfactory.FactoryGenerator;
 import edu.psu.creational.builder.BuilderClient;
-import edu.psu.creational.enums.FactoryType;
-import edu.psu.creational.factory.AbstractWidgetFactory;
-import edu.psu.creational.factory.enums.ProductType;
-import edu.psu.creational.product.AbstractProduct;
+import edu.psu.creational.abstractfactory.factory.enums.FactoryType;
+import edu.psu.creational.abstractfactory.factory.AbstractWidgetFactory;
+import edu.psu.creational.abstractfactory.factory.enums.ProductType;
+import edu.psu.creational.abstractfactory.product.AbstractProduct;
+import edu.psu.creational.singleton.MazeFactory;
 import edu.psu.structural.adapter.TextAdapter;
 import edu.psu.structural.adapter.TextView;
-import edu.psu.structural.target.Shape;
-import edu.psu.structural.target.ShapeType;
+import edu.psu.structural.adapter.target.Shape;
+import edu.psu.structural.adapter.target.ShapeType;
+import edu.psu.structural.bridge.abstraction.IconWindow;
+import edu.psu.structural.bridge.abstraction.Window;
+import edu.psu.structural.bridge.implementor.PMWindowImp;
+import edu.psu.structural.bridge.implementor.XWindowImp;
 
 public class Client {
 
@@ -63,6 +68,9 @@ public class Client {
 
     private static void StructuralDesignPattern() {
         adapterDesignPattern();
+        //Bridge Design Pattern
+        Window iconWindow=new IconWindow(new XWindowImp(), new PMWindowImp());
+        iconWindow.operation();
     }
 
     private static void adapterDesignPattern() {
@@ -90,6 +98,10 @@ public class Client {
         abstractFactoryPrototype();
         // Creational - Builder
         BuilderClient.client();
+        //Creational - Singleton
+        MazeFactory env=MazeFactory.instance();
+        env.setAppName("MyApp");
+        System.out.println("Single Instance - created environment: "+ MazeFactory.instance().getAppName());
     }
 
     private static void abstractFactoryPrototype() {

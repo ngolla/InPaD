@@ -1,6 +1,6 @@
 package edu.psu.structural.adapter;
 
-import edu.psu.structural.target.ShapeType;
+import edu.psu.structural.adapter.target.ShapeType;
 
 public interface TextView {
     public int getWidth();

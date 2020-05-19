@@ -1,6 +1,6 @@
 package edu.psu.structural.adapter;
 
-import edu.psu.structural.target.Shape;
+import edu.psu.structural.adapter.target.Shape;
 
 public class TextAdapter extends TextShape implements TextView {
     private Shape shape;
