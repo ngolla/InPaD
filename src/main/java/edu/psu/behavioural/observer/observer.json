@@ -1,0 +1,42 @@
+{
+  "schemaVersion" : "1.0",
+  "name" : "observer-sdsm",
+  "variables" : [ ".\\ConcreteSubject.java", ".\\Demo.java", ".\\Observer.java", ".\\ObserverImpl.java", ".\\Subject.java" ],
+  "cells" : [ {
+    "src" : 1,
+    "dest" : 0,
+    "values" : {
+      "Call" : 6.0,
+      "Create" : 1.0,
+      "Contain" : 1.0
+    }
+  }, {
+    "src" : 2,
+    "dest" : 4,
+    "values" : {
+      "Parameter" : 1.0
+    }
+  }, {
+    "src" : 1,
+    "dest" : 3,
+    "values" : {
+      "Call" : 2.0,
+      "Create" : 2.0
+    }
+  }, {
+    "src" : 3,
+    "dest" : 4,
+    "values" : {
+      "Call" : 1.0,
+      "Use" : 2.0,
+      "Parameter" : 1.0,
+      "Contain" : 1.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 4,
+    "values" : {
+      "Implement" : 1.0
+    }
+  } ]
+}
