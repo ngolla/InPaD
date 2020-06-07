@@ -1,6 +1,6 @@
 package edu.psu.creational.abstractfactory.product;
 
-public class MotifScrollBar extends AbstractProduct implements Cloneable {
+public class MotifScrollBar extends AbstractProduct {
     private String orientation;
     private int max;
     private int min;
@@ -12,12 +12,6 @@ public class MotifScrollBar extends AbstractProduct implements Cloneable {
     }
 
     public MotifScrollBar() {
-    }
-
-    public void setDefaults(){
-        this.orientation="Default Orientation";
-        this.max=500;
-        this.min=0;
     }
 
     @Override
@@ -34,10 +28,4 @@ public class MotifScrollBar extends AbstractProduct implements Cloneable {
                 '}';
     }
 
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        MotifScrollBar temp = new MotifScrollBar();
-        temp.setDefaults();
-        return temp;
-    }
 }

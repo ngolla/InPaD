@@ -1,6 +1,6 @@
 package edu.psu.creational.abstractfactory.product;
 
-public class MotifWindow extends AbstractProduct implements Cloneable {
+public class MotifWindow extends AbstractProduct {
     private String titleAreaColor;
     private String titleBar;
 
@@ -13,10 +13,6 @@ public class MotifWindow extends AbstractProduct implements Cloneable {
 
     }
 
-    public void setDefaults(){
-        this.titleAreaColor="Orange";
-        this.titleBar="Motif Default text";
-    }
     @Override
     public String getProductDetails() {
         return "Motif Window components of Title Area Color: "+ titleAreaColor +" Title Bar: "+titleBar;
@@ -28,12 +24,5 @@ public class MotifWindow extends AbstractProduct implements Cloneable {
                 "titleAreaColor='" + titleAreaColor + '\'' +
                 ", titleBar='" + titleBar + '\'' +
                 '}';
-    }
-
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        MotifWindow temp = new MotifWindow();
-        temp.setDefaults();
-        return temp;
     }
 }

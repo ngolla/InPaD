@@ -4,5 +4,5 @@ import edu.psu.creational.abstractfactory.factory.enums.ProductType;
 import edu.psu.creational.abstractfactory.product.AbstractProduct;
 
 public abstract class AbstractWidgetFactory {
-    public abstract AbstractProduct getProduct(ProductType productType) throws CloneNotSupportedException;
+    public abstract AbstractProduct getProduct(ProductType productType) ;
 }

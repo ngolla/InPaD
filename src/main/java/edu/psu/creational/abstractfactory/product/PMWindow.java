@@ -1,6 +1,6 @@
 package edu.psu.creational.abstractfactory.product;
 
-public class PMWindow extends AbstractProduct implements Cloneable {
+public class PMWindow extends AbstractProduct {
     private String titleAreaColor;
     private String titleBar;
 
@@ -18,11 +18,6 @@ public class PMWindow extends AbstractProduct implements Cloneable {
         return "PM Window components of Title Area Color: "+ titleAreaColor +" Title Bar: "+titleBar;
     }
 
-    public void setDefaults() {
-        this.titleAreaColor="White";
-        this.titleBar="This is title bar";
-    }
-
     @Override
     public String toString() {
         return "PMWindow{" +
@@ -31,10 +26,4 @@ public class PMWindow extends AbstractProduct implements Cloneable {
                 '}';
     }
 
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        PMWindow clonewindow=new PMWindow();
-        clonewindow.setDefaults();
-        return clonewindow;
-    }
 }

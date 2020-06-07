@@ -7,14 +7,8 @@ import edu.psu.creational.abstractfactory.product.PMScrollBar;
 
 public class ScrollBarFactory extends AbstractWidgetFactory {
     @Override
-    public AbstractProduct getProduct(ProductType productType) throws CloneNotSupportedException {
+    public AbstractProduct getProduct(ProductType productType) {
         switch (productType){
-            case DEFAULTMOTIFSCROLLBAR:
-                MotifScrollBar defaultScrollbar = new MotifScrollBar();
-                return (AbstractProduct) defaultScrollbar.clone();
-            case DEFAULTPMSCROLLBAR:
-                PMScrollBar defaultpm=new PMScrollBar();
-                return (AbstractProduct) defaultpm.clone();
             case PMSCROLLBAR:
                 return new PMScrollBar("PM orientation",50,1);
             case MOTIFSCROLLBAR:
