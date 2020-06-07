@@ -1,0 +1,75 @@
+{
+  "schemaVersion" : "1.0",
+  "name" : "bridge-sdsm",
+  "variables" : [ ".\\Client.java", ".\\abstraction\\IconWindow.java", ".\\abstraction\\Window.java", ".\\implementor\\PMWindowImp.java", ".\\implementor\\WindowImp.java", ".\\implementor\\XWindowImp.java" ],
+  "cells" : [ {
+    "src" : 0,
+    "dest" : 3,
+    "values" : {
+      "Call" : 1.0,
+      "Import" : 1.0,
+      "Create" : 1.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 5,
+    "values" : {
+      "Call" : 1.0,
+      "Import" : 1.0,
+      "Create" : 1.0
+    }
+  }, {
+    "src" : 3,
+    "dest" : 4,
+    "values" : {
+      "Implement" : 1.0
+    }
+  }, {
+    "src" : 1,
+    "dest" : 4,
+    "values" : {
+      "Call" : 2.0,
+      "Import" : 1.0,
+      "Parameter" : 2.0
+    }
+  }, {
+    "src" : 2,
+    "dest" : 4,
+    "values" : {
+      "Import" : 1.0,
+      "Use" : 3.0,
+      "Parameter" : 2.0,
+      "Contain" : 2.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 2,
+    "values" : {
+      "Call" : 1.0,
+      "Import" : 1.0,
+      "Contain" : 1.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 1,
+    "values" : {
+      "Call" : 1.0,
+      "Import" : 1.0,
+      "Create" : 1.0
+    }
+  }, {
+    "src" : 1,
+    "dest" : 2,
+    "values" : {
+      "Call" : 1.0,
+      "Extend" : 1.0,
+      "Use" : 2.0
+    }
+  }, {
+    "src" : 5,
+    "dest" : 4,
+    "values" : {
+      "Implement" : 1.0
+    }
+  } ]
+}

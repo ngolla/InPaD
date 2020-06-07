@@ -1,0 +1,85 @@
+{
+  "schemaVersion" : "1.0",
+  "name" : "composite-sdsm",
+  "variables" : [ ".\\Demo.java", ".\\components\\Bus.java", ".\\components\\Card.java", ".\\components\\Chassis.java", ".\\components\\HardDisk.java", ".\\components\\MainBoard.java", ".\\compositors\\CompositeEquipment.java", ".\\compositors\\Equipment.java" ],
+  "cells" : [ {
+    "src" : 5,
+    "dest" : 6,
+    "values" : {
+      "Import" : 1.0,
+      "Extend" : 1.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 2,
+    "values" : {
+      "Import" : 1.0
+    }
+  }, {
+    "src" : 1,
+    "dest" : 6,
+    "values" : {
+      "Import" : 1.0,
+      "Extend" : 1.0
+    }
+  }, {
+    "src" : 2,
+    "dest" : 7,
+    "values" : {
+      "Call" : 2.0,
+      "Import" : 1.0,
+      "Extend" : 1.0,
+      "Parameter" : 2.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 1,
+    "values" : {
+      "Import" : 1.0
+    }
+  }, {
+    "src" : 6,
+    "dest" : 7,
+    "values" : {
+      "Call" : 1.0,
+      "Extend" : 1.0,
+      "Use" : 1.0,
+      "Parameter" : 2.0,
+      "Contain" : 1.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 4,
+    "values" : {
+      "Import" : 1.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 3,
+    "values" : {
+      "Import" : 1.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 5,
+    "values" : {
+      "Import" : 1.0
+    }
+  }, {
+    "src" : 4,
+    "dest" : 7,
+    "values" : {
+      "Call" : 2.0,
+      "Import" : 1.0,
+      "Extend" : 1.0,
+      "Parameter" : 2.0
+    }
+  }, {
+    "src" : 3,
+    "dest" : 6,
+    "values" : {
+      "Import" : 1.0,
+      "Extend" : 1.0
+    }
+  } ]
+}

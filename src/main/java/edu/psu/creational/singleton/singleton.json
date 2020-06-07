@@ -1,0 +1,14 @@
+{
+  "schemaVersion" : "1.0",
+  "name" : "singleton-sdsm",
+  "variables" : [ ".\\Client.java", ".\\MazeFactory.java" ],
+  "cells" : [ {
+    "src" : 0,
+    "dest" : 1,
+    "values" : {
+      "Call" : 4.0,
+      "Use" : 1.0,
+      "Contain" : 1.0
+    }
+  } ]
+}
