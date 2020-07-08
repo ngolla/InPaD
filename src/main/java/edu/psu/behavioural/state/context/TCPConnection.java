@@ -1,8 +1,8 @@
 package edu.psu.behavioural.state.context;
 
-import edu.psu.behavioural.state.TCPState;
+import edu.psu.behavioural.state.states.TCPState;
 import edu.psu.behavioural.state.concreteState.TCPClosed;
-import edu.psu.behavioural.state.concreteState.TCPOctetStream;
+import edu.psu.behavioural.state.states.TCPOctetStream;
 
 public class TCPConnection {
     private TCPState state;

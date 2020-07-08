@@ -1,6 +1,5 @@
-package edu.psu.behavioural.state;
+package edu.psu.behavioural.state.states;
 
-import edu.psu.behavioural.state.concreteState.TCPOctetStream;
 import edu.psu.behavioural.state.context.TCPConnection;
 
 public class TCPState {

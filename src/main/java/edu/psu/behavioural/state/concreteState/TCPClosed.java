@@ -1,6 +1,6 @@
 package edu.psu.behavioural.state.concreteState;
 
-import edu.psu.behavioural.state.TCPState;
+import edu.psu.behavioural.state.states.TCPState;
 import edu.psu.behavioural.state.context.TCPConnection;
 
 public class TCPClosed extends TCPState{

@@ -1,62 +1,69 @@
 {
   "schemaVersion" : "1.0",
   "name" : "strategy-sdsm",
-  "variables" : [ ".\\ArrayCompositor.java", ".\\Composition.java", ".\\Compositor.java", ".\\Demo.java", ".\\SimpleCompositor.java", ".\\TeXCompositor.java" ],
+  "variables" : [ ".\\Demo.java", ".\\composition\\Composition.java", ".\\compositor\\ArrayCompositor.java", ".\\compositor\\Compositor.java", ".\\compositor\\SimpleCompositor.java", ".\\compositor\\TeXCompositor.java" ],
   "cells" : [ {
-    "src" : 3,
-    "dest" : 5,
+    "src" : 0,
+    "dest" : 2,
     "values" : {
       "Call" : 1.0,
-      "Create" : 1.0
-    }
-  }, {
-    "src" : 3,
-    "dest" : 0,
-    "values" : {
-      "Call" : 1.0,
+      "Import" : 1.0,
       "Create" : 1.0
     }
   }, {
     "src" : 0,
-    "dest" : 2,
+    "dest" : 5,
     "values" : {
-      "Implement" : 1.0
+      "Call" : 1.0,
+      "Import" : 1.0,
+      "Create" : 1.0
     }
   }, {
-    "src" : 3,
-    "dest" : 1,
-    "values" : {
-      "Call" : 8.0,
-      "Create" : 2.0,
-      "Contain" : 2.0
-    }
-  }, {
-    "src" : 5,
-    "dest" : 2,
+    "src" : 2,
+    "dest" : 3,
     "values" : {
       "Implement" : 1.0
     }
   }, {
     "src" : 4,
-    "dest" : 2,
+    "dest" : 3,
     "values" : {
+      "Import" : 1.0,
+      "Implement" : 1.0
+    }
+  }, {
+    "src" : 5,
+    "dest" : 3,
+    "values" : {
+      "Import" : 1.0,
       "Implement" : 1.0
     }
   }, {
     "src" : 1,
-    "dest" : 2,
+    "dest" : 3,
     "values" : {
       "Call" : 1.0,
+      "Import" : 1.0,
       "Use" : 2.0,
       "Parameter" : 1.0,
       "Contain" : 1.0
     }
   }, {
-    "src" : 3,
+    "src" : 0,
     "dest" : 4,
     "values" : {
       "Call" : 1.0,
+      "Import" : 1.0,
       "Create" : 1.0
+    }
+  }, {
+    "src" : 0,
+    "dest" : 1,
+    "values" : {
+      "Call" : 8.0,
+      "Import" : 1.0,
+      "Create" : 2.0,
+      "Contain" : 2.0
     }
   } ]
 }

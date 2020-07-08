@@ -1,25 +1,89 @@
 {
   "schemaVersion" : "1.0",
   "name" : "state-sdsm",
-  "variables" : [ ".\\Demo.java", ".\\TCPState.java", ".\\concreteState\\TCPClosed.java", ".\\concreteState\\TCPEstablished.java", ".\\concreteState\\TCPListen.java", ".\\concreteState\\TCPOctetStream.java", ".\\context\\TCPConnection.java" ],
+  "variables" : [ ".\\Demo.java", ".\\concreteState\\TCPClosed.java", ".\\concreteState\\TCPEstablished.java", ".\\concreteState\\TCPListen.java", ".\\context\\TCPConnection.java", ".\\states\\TCPOctetStream.java", ".\\states\\TCPState.java" ],
   "cells" : [ {
-    "src" : 1,
+    "src" : 2,
     "dest" : 5,
     "values" : {
       "Import" : 1.0,
       "Parameter" : 1.0
     }
   }, {
+    "src" : 2,
+    "dest" : 6,
+    "values" : {
+      "Import" : 1.0,
+      "Return" : 1.0,
+      "Extend" : 1.0,
+      "Use" : 2.0,
+      "Contain" : 1.0
+    }
+  }, {
     "src" : 6,
+    "dest" : 4,
+    "values" : {
+      "Call" : 1.0,
+      "Import" : 1.0,
+      "Parameter" : 8.0
+    }
+  }, {
+    "src" : 6,
+    "dest" : 5,
+    "values" : {
+      "Parameter" : 1.0
+    }
+  }, {
+    "src" : 1,
+    "dest" : 3,
+    "values" : {
+      "Call" : 1.0,
+      "Use" : 1.0
+    }
+  }, {
+    "src" : 4,
+    "dest" : 5,
+    "values" : {
+      "Import" : 1.0,
+      "Parameter" : 1.0
+    }
+  }, {
+    "src" : 1,
     "dest" : 2,
+    "values" : {
+      "Call" : 1.0,
+      "Use" : 1.0
+    }
+  }, {
+    "src" : 1,
+    "dest" : 6,
+    "values" : {
+      "Call" : 1.0,
+      "Import" : 1.0,
+      "Return" : 1.0,
+      "Extend" : 1.0,
+      "Use" : 2.0,
+      "Contain" : 1.0
+    }
+  }, {
+    "src" : 4,
+    "dest" : 1,
     "values" : {
       "Call" : 1.0,
       "Import" : 1.0,
       "Use" : 1.0
     }
   }, {
-    "src" : 6,
-    "dest" : 1,
+    "src" : 1,
+    "dest" : 4,
+    "values" : {
+      "Call" : 1.0,
+      "Import" : 1.0,
+      "Parameter" : 2.0
+    }
+  }, {
+    "src" : 4,
+    "dest" : 6,
     "values" : {
       "Call" : 7.0,
       "Import" : 1.0,
@@ -29,91 +93,17 @@
     }
   }, {
     "src" : 3,
-    "dest" : 1,
+    "dest" : 6,
     "values" : {
       "Import" : 1.0,
       "Return" : 1.0,
       "Extend" : 1.0,
       "Use" : 2.0,
       "Contain" : 1.0
-    }
-  }, {
-    "src" : 2,
-    "dest" : 6,
-    "values" : {
-      "Call" : 1.0,
-      "Import" : 1.0,
-      "Parameter" : 2.0
-    }
-  }, {
-    "src" : 2,
-    "dest" : 4,
-    "values" : {
-      "Call" : 1.0,
-      "Use" : 1.0
-    }
-  }, {
-    "src" : 2,
-    "dest" : 3,
-    "values" : {
-      "Call" : 1.0,
-      "Use" : 1.0
-    }
-  }, {
-    "src" : 3,
-    "dest" : 6,
-    "values" : {
-      "Call" : 2.0,
-      "Import" : 1.0,
-      "Parameter" : 2.0
-    }
-  }, {
-    "src" : 2,
-    "dest" : 1,
-    "values" : {
-      "Call" : 1.0,
-      "Import" : 1.0,
-      "Return" : 1.0,
-      "Extend" : 1.0,
-      "Use" : 2.0,
-      "Contain" : 1.0
-    }
-  }, {
-    "src" : 1,
-    "dest" : 6,
-    "values" : {
-      "Call" : 1.0,
-      "Import" : 1.0,
-      "Parameter" : 8.0
-    }
-  }, {
-    "src" : 4,
-    "dest" : 1,
-    "values" : {
-      "Import" : 1.0,
-      "Return" : 1.0,
-      "Extend" : 1.0,
-      "Use" : 2.0,
-      "Contain" : 1.0
-    }
-  }, {
-    "src" : 4,
-    "dest" : 6,
-    "values" : {
-      "Call" : 1.0,
-      "Import" : 1.0,
-      "Parameter" : 1.0
-    }
-  }, {
-    "src" : 3,
-    "dest" : 4,
-    "values" : {
-      "Call" : 1.0,
-      "Use" : 1.0
     }
   }, {
     "src" : 0,
-    "dest" : 6,
+    "dest" : 4,
     "values" : {
       "Call" : 4.0,
       "Import" : 1.0,
@@ -121,23 +111,33 @@
       "Contain" : 1.0
     }
   }, {
-    "src" : 4,
+    "src" : 2,
     "dest" : 3,
     "values" : {
       "Call" : 1.0,
       "Use" : 1.0
     }
   }, {
-    "src" : 6,
-    "dest" : 5,
+    "src" : 3,
+    "dest" : 2,
     "values" : {
+      "Call" : 1.0,
+      "Use" : 1.0
+    }
+  }, {
+    "src" : 2,
+    "dest" : 4,
+    "values" : {
+      "Call" : 2.0,
       "Import" : 1.0,
-      "Parameter" : 1.0
+      "Parameter" : 2.0
     }
   }, {
     "src" : 3,
-    "dest" : 5,
+    "dest" : 4,
     "values" : {
+      "Call" : 1.0,
+      "Import" : 1.0,
       "Parameter" : 1.0
     }
   } ]
